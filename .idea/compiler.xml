@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="leetcode" />
+        <module name="netty" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="leetcode" target="1.5" />
+      <module name="netty" target="1.5" />
       <module name="zy-test" target="1.5" />
     </bytecodeTargetLevel>
   </component>
