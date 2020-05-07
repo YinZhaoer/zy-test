@@ -14,19 +14,28 @@ import java.util.List;
 public class P_56 {
 
     public static void main(String[] args) {
-        int[][] intervals = new int[][]{{2, 6}, {1, 3}, {8, 10}, {15, 18}};
+        int[][] intervals = new int[][]{};
         System.out.println(merge(intervals));
     }
 
     public static int[][] merge(int[][] intervals) {
+        if (intervals.length == 0) {
+            return new int[][]{};
+        }
         List<int[]> res = new ArrayList<int[]>();
         Arrays.sort(intervals, Comparator.comparingInt(v -> v[0]));
         res.add(intervals[0]);
+        int resLength = 1;
         for (int i = 1; i < intervals.length; i++) {
-
+            int[] resTail = res.get(resLength - 1);
+            if (intervals[i][0] <= resTail[1]) {
+                resTail[1] = intervals[i][1]>resTail[1]?intervals[i][1]:resTail[1];
+            } else {
+                res.add(intervals[i]);
+                resLength++;
+            }
         }
-        return res.toArray(intervals);
-
+        return res.toArray(new int[resLength][]);
 
     }
 
