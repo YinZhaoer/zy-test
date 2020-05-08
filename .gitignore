@@ -1,0 +1,54 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Java template
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+risk-api/target
+risk-common/target
+risk-jms/target
+risk-base/target
+risk-storm/target
+risk-ncs/target
+risk-admin/target
+risk-ddb/target
+risk-hive/target
+risk-schedule/target
+risk-detect.iml
+target/
+.idea
+*.iml
+logs/
+risk-api/src/main/resources/application.yml
+risk-ddb/src/main/resources/application.yml
+risk-jms/src/main/resources/application.yml
+risk-ncs/src/main/resources/application.yml
+risk-storm/src/main/resources/kafka.properties
+.arcconfig
+.vscode
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.project
+.classpath
+.settings
+.factorypath
