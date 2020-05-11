@@ -11,6 +11,10 @@
     <modules>
         <module>leetcode</module>
         <module>netty</module>
+        <module>common</module>
+        <module>spring</module>
+        <module>netty</module>
+        <module>flink</module>
     </modules>
 
 
