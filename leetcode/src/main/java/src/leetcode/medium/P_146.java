@@ -8,7 +8,7 @@ import java.util.Hashtable;
  * @description: P_146构造LRU缓存
  * 1.直接利用有序字典 linkedHashMap 2.使用HashMap（实现get put的O(1)）+linkedList（充当节点，实现最远淘汰）自己实现（其实就是1的简单实现）
  */
-public class LRUCache {
+public class P_146 {
 
     class DLinkedNode {
         int key;
@@ -63,7 +63,7 @@ public class LRUCache {
     //使用两个伪节点充当头尾，减少null判断
     private DLinkedNode head, tail;
 
-    public LRUCache(int capacity) {
+    public P_146(int capacity) {
         this.size = 0;
         this.capacity = capacity;
 
