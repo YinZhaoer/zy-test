@@ -40,6 +40,7 @@ public class P_98 {
         int val=node.getVal();
         if(lower!=null&&val<=lower) return false;
         if(upper!=null&&val>=upper) return false;
+        //关键递推步骤，注意lower upper的关系
         if(!helper(node.getRight(),val,upper)) return false;
         if(!helper(node.getLeft(),lower,val)) return false;
         return true;
