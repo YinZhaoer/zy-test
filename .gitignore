@@ -52,3 +52,9 @@ risk-storm/src/main/resources/kafka.properties
 .classpath
 .settings
 .factorypath
+leetcode/src/main/java/src/leetcode/hard/
+leetcode/src/main/java/src/leetcode/middle/
+leetcode/src/main/java/src/utils/
+leetcode/src/main/resources/
+leetcode/src/test/
+netty/src/
