@@ -36,10 +36,11 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>leetcode</module>
-        <module>common</module>
-        <module>spring</module>
         <module>netty</module>
-        <module>flink</module>
+        <module>spring</module>
+        <module>filnk</module>
+        <module>common</module>
+
     </modules>
 
 
