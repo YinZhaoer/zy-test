@@ -8,24 +8,33 @@ package src.leetcode.easy;
  */
 public class P_79 {
 
-    public static void main(String[] args) {
+    private static boolean[][] marked;
 
-        char[][] board = {{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
-        System.out.println(exist(board, "NIMA"));
+    private static char[][] board = {{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
+
+    private static int[][] direction = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+
+    private static String word = "ABCB";
+
+    private static int length;
+
+    private static int height;
+
+
+    public static void main(String[] args) {
+        System.out.println(exist(board, word));
     }
 
     public static boolean exist(char[][] board, String word) {
-        if(board.length==0){
+        if (board.length == 0) {
             return false;
         }
-        int [][] direction={{0,1},{0,-1},{1,0},{-1,0}};
-        String[] chars = word.split("");
-        int arrayCount=board.length;
-        int arrayLength=board[0].length;
-        int[][] state = new int[arrayCount][arrayLength];
-        for(int i=0;i<arrayCount;i++){
-            for(int j=0;j<arrayLength;j++){
-                if(dfs(i,j,0)){
+        height = board.length;
+        length = board[0].length;
+        marked=new boolean[length][height];
+        for (int i = 0; i < length; i++) {
+            for (int j = 0; j < height; j++) {
+                if (dfs(i, j, 0)) {
                     return true;
                 }
             }
@@ -33,9 +42,34 @@ public class P_79 {
         return false;
     }
 
-    public static boolean dfs(int i,int j,int start){
+    public static boolean dfs(int i, int j, int start) {
+        //start标志的是word下标
+        if (start == word.length() - 1) {
+            return board[i][j] == word.charAt(start);
+        }
+        if (board[i][j] == word.charAt(start)) {
+            marked[i][j] = true;
+            for (int k = 0; k < 4; k++) {
+                int newX = i + direction[k][0];
+                int newY = j + direction[k][1];
+                //核心递归
+                if (inArea(newX, newY)&&!marked[newX][newY]){
+                    if(dfs(newX,newY,start+1)){
+                        return true;
+                    }
+                }
+            }
+            //四个方向都失败则回退，重置状态
+            marked[i][j]=false;
+        }
+        return false;
 
 
+    }
+
+
+    private static boolean inArea(int x, int y) {
+        return x >= 0 && x < length && y >= 0 && y < height;
     }
 
 

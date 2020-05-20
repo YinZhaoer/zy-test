@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common" />
+        <module name="filnk" />
         <module name="flink" />
         <module name="leetcode" />
         <module name="netty" />
@@ -15,6 +16,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common" target="1.8" />
+      <module name="filnk" target="1.8" />
       <module name="flink" target="1.8" />
       <module name="leetcode" target="1.8" />
       <module name="netty" target="1.8" />
@@ -25,6 +27,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common" options="-parameters" />
+      <module name="filnk" options="-parameters" />
       <module name="flink" options="-parameters" />
       <module name="leetcode" options="-parameters" />
       <module name="netty" options="-parameters" />
