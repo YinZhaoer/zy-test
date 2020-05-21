@@ -8,6 +8,7 @@ package src.leetcode.easy;
  */
 public class P_79 {
 
+    //todo zy uncommit
     private static boolean[][] marked;
 
     private static char[][] board = {{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
@@ -31,9 +32,9 @@ public class P_79 {
         }
         height = board.length;
         length = board[0].length;
-        marked=new boolean[length][height];
-        for (int i = 0; i < length; i++) {
-            for (int j = 0; j < height; j++) {
+        marked=new boolean[height][length];
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < length; j++) {
                 if (dfs(i, j, 0)) {
                     return true;
                 }
