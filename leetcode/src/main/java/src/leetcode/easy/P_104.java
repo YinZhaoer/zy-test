@@ -10,10 +10,13 @@ import src.leetcode.structure.TreeNode;
 public class P_104 {
     public static int maxDepth(TreeNode root) {
         if (root == null) {
+            //终止条件
             return 0;
         } else {
+            //递
             int left = maxDepth(root.left);
             int right = maxDepth(root.right);
+            //归
             return Math.max(left, right) + 1;
         }
     }
