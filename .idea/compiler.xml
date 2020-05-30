@@ -17,19 +17,17 @@
     <bytecodeTargetLevel>
       <module name="common" target="1.8" />
       <module name="filnk" target="1.8" />
-      <module name="flink" target="1.8" />
       <module name="kafka" target="1.8" />
       <module name="leetcode" target="1.8" />
       <module name="netty" target="1.8" />
       <module name="spring" target="1.8" />
-      <module name="zy-test" target="1.8" />
+      <module name="test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common" options="-parameters" />
       <module name="filnk" options="-parameters" />
-      <module name="flink" options="-parameters" />
       <module name="kafka" options="-parameters" />
       <module name="leetcode" options="-parameters" />
       <module name="netty" options="-parameters" />
