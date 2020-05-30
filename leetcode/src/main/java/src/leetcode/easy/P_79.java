@@ -25,7 +25,7 @@ public class P_79 {
         int[][] state = new int[arrayCount][arrayLength];
         for(int i=0;i<arrayCount;i++){
             for(int j=0;j<arrayLength;j++){
-                if(dfs(i,j,0)){
+                if(dfs(i,j,0,word.toCharArray())){
                     return true;
                 }
             }
@@ -33,9 +33,13 @@ public class P_79 {
         return false;
     }
 
-    public static boolean dfs(int i,int j,int start){
+    public static boolean dfs(int i,int j,int start,char[] word){
+        if(){
+
+        }
 
 
+        return ture;
     }
 
 

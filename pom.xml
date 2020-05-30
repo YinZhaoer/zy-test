@@ -40,6 +40,7 @@
         <module>spring</module>
         <module>filnk</module>
         <module>common</module>
+        <module>kafka</module>
 
     </modules>
 
