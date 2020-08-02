@@ -27,6 +27,14 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+
+
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+            <version>2.4.6.RELEASE</version>
+        </dependency>
     </dependencies>
 
 
@@ -43,6 +51,17 @@
         <module>kafka</module>
 
     </modules>
+
+    <repositories>
+
+        <repository>
+            <id>confluent</id>
+            <url>https://packages.confluent.io/maven/</url>
+        </repository>
+
+        <!-- further repository entries here -->
+
+    </repositories>
 
 
 </project>

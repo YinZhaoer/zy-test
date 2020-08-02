@@ -1,5 +1,7 @@
-package src.sender;
+package sender;
 
+import org.springframework.kafka.annotation.EnableKafka;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 
 /**
@@ -9,7 +11,14 @@ import org.springframework.stereotype.Component;
  * @Description 基础kakfa发送组件
  */
 @Component
+@EnableKafka
 public class BaseSender {
+
+
+
+
+
+
 
 
 }
