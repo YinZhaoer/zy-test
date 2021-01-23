@@ -49,6 +49,7 @@
         <module>filnk</module>
         <module>common</module>
         <module>kafka</module>
+        <module>habse</module>
 
     </modules>
 

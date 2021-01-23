@@ -1,37 +1,6 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Java template
-# Compiled class file
-*.class
 
-# Log file
-*.log
 
-# BlueJ files
-*.ctxt
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-risk-api/target
-risk-common/target
-risk-jms/target
-risk-base/target
-risk-storm/target
-risk-ncs/target
-risk-admin/target
-risk-ddb/target
-risk-hive/target
-risk-schedule/target
-risk-detect.iml
 target/
 .idea
 *.iml
@@ -58,3 +27,12 @@ leetcode/src/main/java/src/utils/
 leetcode/src/main/resources/
 leetcode/src/test/
 netty/src/
+common/src/
+filnk/src/main/java/src/flink/common/
+filnk/src/main/java/src/flink/input/
+filnk/src/main/resources/
+filnk/src/test/
+habse/src/
+kafka/src/main/resources/
+kafka/src/test/
+spring/src/
